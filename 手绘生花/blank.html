@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手绘生花</title>
+    <link rel="stylesheet" href="./styles.css">
+    <!-- 使用 Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="/">手绘生花</a>
+        </div>
+        <div class="nav-menu">
+            <a href="#home" class="active">首页</a>
+            <a href="#gallery">画廊</a>
+            <a href="#about">关于</a>
+            <a href="#contact">联系我们</a>
+        </div>
+        <div class="nav-search">
+            <input 
+                type="text" 
+                id="searchInput" 
+                name="search" 
+                placeholder="搜索作品..." 
+                aria-label="搜索作品"
+            >
+            <button type="button" id="searchButton" aria-label="搜索">
+                <span class="material-icons">search</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>手绘生花</h1>
+            <p>让创意绽放，让艺术生长</p>
+            <button class="cta-button" id="generateButton">开始创作</button>
+        </div>
+    </header>
+
+    <!-- 主要内容区 -->
+    <main>
+        <!-- 特色作品区 -->
+        <section class="featured-videos">
+            <h2>创作案例</h2>
+            <div class="video-grid">
+                <!-- 作品卡片 1 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="assets/picture/1.jpeg" alt="作品缩略图1">
+                        <span class="duration">手绘</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>花卉</h3>
+                        <p class="video-meta">
+                            <span>1.2万次浏览</span>
+                            <span>2天前</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 2 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="assets/picture/2.jpeg" alt="作品缩略图2">
+                        <span class="duration">手绘</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>自然风光</h3>
+                        <p class="video-meta">
+                            <span>8千次浏览</span>
+                            <span>3天前</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 3 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="assets/picture/3.jpeg" alt="作品缩略图3">
+                        <span class="duration">手绘</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>创意插画</h3>
+                        <p class="video-meta">
+                            <span>1.5万次浏览</span>
+                            <span>1天前</span>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 作品卡片 4 -->
+                <div class="video-card">
+                    <div class="thumbnail">
+                        <img src="assets/picture/4.jpeg" alt="作品缩略图4">
+                        <span class="duration">手绘</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>艺术创作</h3>
+                        <p class="video-meta">
+                            <span>9千次浏览</span>
+                            <span>4天前</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 分类区域 -->
+        <section class="categories">
+            <h2>模块</h2>
+            <div class="category-grid">
+                <a href="我的第一个ai网站.html" class="category-card">
+                    <span class="material-icons">brush</span>
+                    <h3>趣味问答</h3>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="material-icons">palette</span>
+                    <h3>艺术创作</h3>
+                </a>
+                <!-- 更多分类... -->
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <p>用AI创造独特的视觉体验。</p>
+            </div>
+            <div class="footer-section">
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="#home">首页</a></li>
+                    <li><a href="#create">创作</a></li>
+                    <li><a href="#about">关于</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#"><span class="material-icons">wechat</span></a>
+                    <a href="#"><span class="material-icons">public</span></a>
+                    <a href="#"><span class="material-icons">chat</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 手绘生花. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html> 

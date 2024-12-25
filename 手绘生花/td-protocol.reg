@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\touchdesigner]
+@="URL:TouchDesigner Protocol"
+"URL Protocol"=""
+
+[HKEY_CLASSES_ROOT\touchdesigner\shell]
+
+[HKEY_CLASSES_ROOT\touchdesigner\shell\open]
+
+[HKEY_CLASSES_ROOT\touchdesigner\shell\open\command]
+@="\"C:\\Program Files\\Derivative\\TouchDesigner\\bin\\TouchDesigner.exe\" \"%1\"" 

@@ -1,0 +1,168 @@
+/* 整体容器 */
+.container {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 顶部导航栏 */
+.header {
+  width: 100%;
+  height: 120rpx;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 16rpx;
+}
+
+.nav {
+  display: flex;
+  gap: 40rpx;
+}
+
+.nav-item {
+  color: #333;
+  font-size: 28rpx;
+  padding: 20rpx;
+  position: relative;
+}
+
+.nav-item.active {
+  color: #1890ff;
+}
+
+.nav-item.active:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40rpx;
+  height: 4rpx;
+  background-color: #1890ff;
+}
+
+.login-btn {
+  background-color: #1890ff;
+  color: white;
+  padding: 16rpx 40rpx;
+  border-radius: 30rpx;
+  font-size: 28rpx;
+  border: none;
+}
+
+/* 主要内容区 */
+.main-content {
+  margin-top: 120rpx;
+  padding: 40rpx;
+  flex: 1;
+}
+
+/* 上传区域 */
+.upload-section {
+  background-color: white;
+  border-radius: 20rpx;
+  padding: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.upload-box {
+  border: 2rpx dashed #ddd;
+  border-radius: 16rpx;
+  padding: 60rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20rpx;
+}
+
+.upload-icon {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.upload-title {
+  font-size: 32rpx;
+  color: #333;
+  font-weight: 500;
+}
+
+.upload-desc {
+  font-size: 24rpx;
+  color: #999;
+}
+
+/* 视频预览 */
+.preview-video {
+  width: 100%;
+  height: 400rpx;
+  margin-top: 40rpx;
+  border-radius: 16rpx;
+}
+
+/* AI处理区域 */
+.generate-btn {
+  width: 100%;
+  background-color: #1890ff;
+  color: white;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  margin: 40rpx 0;
+}
+
+.generate-btn.processing {
+  background-color: rgba(24, 144, 255, 0.6);
+}
+
+.download-btn {
+  width: 100%;
+  background-color: #52c41a;
+  color: white;
+  padding: 24rpx;
+  border-radius: 16rpx;
+  margin-top: 20rpx;
+}
+
+/* 底部区域 */
+.footer {
+  background-color: #f8f9fa;
+  padding: 40rpx;
+  color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 40rpx;
+  margin-bottom: 20rpx;
+}
+
+.footer-link {
+  color: #666;
+  font-size: 24rpx;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.footer-logo {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+} 

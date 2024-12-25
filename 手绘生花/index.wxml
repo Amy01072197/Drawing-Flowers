@@ -1,0 +1,66 @@
+<view class="container">
+  <!-- 顶部导航栏 -->
+  <view class="header">
+    <view class="header-left">
+      <image class="logo" src="/images/logo.png" mode="aspectFit"></image>
+    </view>
+    <view class="nav">
+      <text class="nav-item active">即梦 AI</text>
+      <text class="nav-item">关于我们</text>
+      <text class="nav-item">支持</text>
+    </view>
+    <view class="header-right">
+      <button class="login-btn">登录/注册</button>
+    </view>
+  </view>
+
+  <!-- 主要内容区 -->
+  <view class="main-content">
+    <!-- 上传区域 -->
+    <view class="upload-section">
+      <view class="upload-box" bindtap="chooseVideo">
+        <image class="upload-icon" src="/images/logo.png"></image>
+        <text class="upload-title">点击上传视频</text>
+        <text class="upload-desc">支持mp4格式，最大100MB</text>
+      </view>
+      
+      <!-- 视频预览 -->
+      <video wx:if="{{videoSrc}}" 
+             src="{{videoSrc}}" 
+             class="preview-video"
+             controls></video>
+    </view>
+
+    <!-- AI处理区域 -->
+    <view class="ai-section">
+      <button class="generate-btn {{isProcessing ? 'processing' : ''}}" 
+              bindtap="generateVideo" 
+              disabled="{{!videoSrc || isProcessing}}">
+        {{isProcessing ? '正在生成...' : '生成AI视频'}}
+      </button>
+      
+      <!-- AI生成的视频预览 -->
+      <video wx:if="{{aiVideoSrc}}" 
+             src="{{aiVideoSrc}}" 
+             class="preview-video"
+             controls></video>
+      
+      <button wx:if="{{aiVideoSrc}}" 
+              class="download-btn" 
+              bindtap="downloadVideo">
+        下载视频
+      </button>
+    </view>
+  </view>
+
+  <!-- 底部区域 -->
+  <view class="footer">
+    <view class="footer-links">
+      <image class="footer-logo" src="/images/logo.png" mode="aspectFit"></image>
+      <text class="footer-link">隐私政策</text>
+      <text class="footer-link">使用条款</text>
+      <text class="footer-link">联系我们</text>
+    </view>
+    <text class="copyright">© 2024 即梦AI. All rights reserved.</text>
+  </view>
+</view> 
